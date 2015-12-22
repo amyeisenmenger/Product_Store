@@ -1,0 +1,21 @@
+<form id="edit_product_form" class="hidden" action="/products" method="POST">
+  <label for="edit_product_name">Name:</label>
+  <input type ="text" id="edit_product_name" name="product[name]"></input>
+  <br />
+  <label for="product_base_price">Base Price:</label>
+  <input type="text" id="edit_product_base_price" name="product[base_price]"></input>
+  <br />
+ <label for="product_description">Description:</label>
+  <input type="text" id="edit_product_description" name="product[description]"></input>
+  <br />
+  <label for="product_quantity_on_hand">Quantity on Hand:</label>
+  <input type="text" id="edit_product_quantity_on_hand" name="product[quantity_on_hand]"></input>
+  <br />
+  <label for="product_color">Color:</label>
+  <input type="text" id="edit_product_color" name="product[color]"></input>
+  <br />
+  <label for="product_weight">Weight:</label>
+  <input type="text" id="edit_product_weight" name="product[weight]"></input>
+  <br />
+  <input type="submit" class="btn" id="edit_product_add_button" value="Save" />
+</form>

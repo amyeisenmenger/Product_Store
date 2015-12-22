@@ -1,0 +1,29 @@
+<h1>Products</h1>
+<div id="message_div">
+</div>
+<div>
+  <table id="product_list">
+    <th>
+      <td>Name</td>
+      <td>Base Price</td>
+      <td>Description</td>
+      <td>Quantity</td>
+      <td>Color</td>
+      <td>Weight</td>
+    </th>
+  </table>
+</div>
+<div id="product_view" class="hidden">
+  <h3 id="product_name"></h3><br/>
+  Base Price: <i id="product_base_price"></i><br/>
+  Description: <i id="product_description"></i><br/>
+  Quantity: <i id="product_quantity_on_hand"></i><br/>
+  Color: <i id="product_color"></i><br/>
+  Weight: <i id="product_weight"></i><br/>
+  <br />
+  <button class="product_edit btn">Edit</button>
+  <button class="back_to_product_list btn">Back</button>
+  <%= render partial: 'edit_product_form' %>
+</div>
+<hr />
+<%= render partial: 'new_product_form' %>
